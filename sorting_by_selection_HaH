@@ -1,0 +1,9 @@
+def sorter(nums):
+    print('Was:', nums)
+    for i in range(len(nums)):
+        lowest = i
+        for j in range(i+1, len(nums)):
+            if nums[j] < nums[lowest]:
+                nums[lowest], nums[j] = nums[j], nums[lowest]
+    print('Now:', nums)
+    return nums
